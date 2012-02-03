@@ -1,0 +1,133 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gol;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+ 
+public class GUI extends JFrame {
+    JButton applyButton = new JButton("Apply gaps");
+ 
+
+    GridLayout experimentLayout = new GridLayout(10,10);
+    
+    public GUI(String name) {
+        super(name);
+        setResizable(true);
+    }
+    
+    
+     
+    public JButton[][] addComponentsToPane(final Container pane,Grid grid, int h,int w){
+        JButton btns[][];
+        experimentLayout.setColumns(h);
+        experimentLayout.setRows(w);
+        final JPanel compsToExperiment = new JPanel();
+        compsToExperiment.setLayout(experimentLayout);
+        JPanel controls = new JPanel();
+        
+        controls.setLayout(new GridLayout(h,w));
+         
+        //Set up components preferred size
+        //JButton b = new JButton("Just fake button");
+        //Dimension buttonSize = b.getPreferredSize();
+
+        //Add buttons to experiment with Grid Layout
+        int i,j;
+        btns = new JButton[w][h];
+        for(i=0;i<h;i++) for(j=0;j<w;j++) btns[i][j] = new JButton("foo");
+        for(i=0;i<h;i++) for(j=0;j<w;j++) compsToExperiment.add(btns[i][j]);
+        for(i=0;i<h;i++) for(j=0;j<w;j++)
+        {
+            if(grid.giveCell(i,j).getStatus()) btns[i][j].setBackground(Color.black);
+            else btns[i][j].setBackground(Color.white);
+        } 
+
+         
+        //Add controls to set up horizontal and vertical gaps
+        controls.add(new Label("Horizontal gap:"));
+        controls.add(new Label("Vertical gap:"));
+        controls.add(new Label(" "));
+
+        controls.add(applyButton);
+         
+        //Process the Apply gaps button press
+        applyButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+               //Set up the layout of the buttons
+                experimentLayout.layoutContainer(compsToExperiment);
+            }
+        });
+        pane.add(compsToExperiment, BorderLayout.NORTH);
+        pane.add(new JSeparator(), BorderLayout.CENTER);
+        pane.add(controls, BorderLayout.SOUTH);
+        return btns;
+        
+    }
+     
+    /**
+     * Create the GUI and show it.  For thread safety,
+     * this method is invoked from the
+     * event dispatch thread.
+     */
+    private static void createAndShowGUI() throws InterruptedException {
+        //Create and set up the window.
+        GUI frame = new GUI("GridLayoutDemo");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //Set up the content pane.
+        int w = 20;
+        int h = 20;
+        int i,j;
+        JButton btns[][];
+        Grid grid = new Grid(h,w);
+
+        btns = frame.addComponentsToPane(frame.getContentPane(),grid,h,w);
+        
+
+        //Display the window.
+        frame.pack();
+        frame.setVisible(true);
+        //Thread.sleep(2000);
+        //btns[1][1].setBackground(Color.black);
+      /*  while(!grid.iterate()) {
+        for(i=0;i<h;i++) for(j=0;j<w;j++)
+        {
+            if(grid.giveCell(i,j).getStatus()) btns[i][j].setBackground(Color.black);
+            else btns[i][j].setBackground(Color.white);
+        }                
+        Thread.sleep(1000);
+        }*/
+    }
+     
+    public static void main(String[] args) {
+        /* Use an appropriate Look and Feel */
+        try {
+            //UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+            UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+        } catch (UnsupportedLookAndFeelException ex) {
+            ex.printStackTrace();
+        } catch (IllegalAccessException ex) {
+            ex.printStackTrace();
+        } catch (InstantiationException ex) {
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        /* Turn off metal's use of bold fonts */
+        UIManager.put("swing.boldMetal", Boolean.FALSE);
+         
+        //Schedule a job for the event dispatch thread:
+        //creating and showing this application's GUI.
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                try {createAndShowGUI(); }
+                catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+    }
+}
