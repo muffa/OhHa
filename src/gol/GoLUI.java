@@ -15,12 +15,12 @@ import javax.swing.*;
 
 
 
-public class GoLUI extends JPanel {
+public class GoLUI extends JPanel  {
     private boolean DEBUG = true;
     public JTable table;
     public Grid foo;
-    public int w = 10;
-    public int h = 10;
+    public int w = 50;
+    public int h = 50;
     public int i,j;
     public GoLUI() {
         super(new GridLayout(1,0));
@@ -49,11 +49,15 @@ public class GoLUI extends JPanel {
                     Object asdf = e.getSource();
                     int row = ((JTable)asdf).getSelectedRow();
                     int col = ((JTable)asdf).getSelectedColumn();
-                    foo.giveCell(row,col).setStatus(!(foo.giveCell(row,col).getStatus()));
+                    foo.giveCell(row,col).setStatus((foo.giveCell(row,col).getStatus()) == false);
                     System.out.println("r: " + row + " c: " +  col);
                     if(foo.giveCell(row,col).getStatus()) table.setValueAt(" ", row, col);
                     else table.setValueAt("ALIVE", row, col);
                     
+                    for(i=0;i<w;i++) for(j=0;j<h;j++) {
+                        table.setValueAt(" ", i, j);
+                        if(foo.giveCell(i,j).getStatus()) table.setValueAt("ALIVE", i, j);
+                    }
                     table.repaint();
                     //printDebugData(table);
                 }
@@ -65,6 +69,11 @@ public class GoLUI extends JPanel {
 
         //Add the scroll pane to this panel.
         add(scrollPane);
+        JButton b1 = new JButton("Play/Pause");
+        b1.setActionCommand("play");
+        //b1.setVerticalTextPosition(AbstractButton.LEFT);
+        //b1.addActionListener(this);
+        //add(b1);
     }
 
 
@@ -105,6 +114,7 @@ public class GoLUI extends JPanel {
         frame.setVisible(true);
         int i,j;
         //cntPn.foo.iterate();
+        
         return cntPn;
 
     }
@@ -116,11 +126,14 @@ public class GoLUI extends JPanel {
         //javax.swing.SwingUtilities.invokeLater(new Runnable() {
             //public void run() {
             GoLUI cntPn = createAndShowGUI();
-            try{
+            TableTimer timer = new TableTimer(cntPn,1000);
+            timer.start();
+            /*try{
             int i,j;
+            
             while(!cntPn.foo.iterate()) {
                 
-                Thread.sleep(1000);
+                Thread.sleep(5000);
                 for(i=0;i<cntPn.w;i++){
                     for(j=0;j<cntPn.h;j++) {
                         cntPn.table.setValueAt(" ", i, j);
@@ -132,7 +145,8 @@ public class GoLUI extends JPanel {
             }
             catch(Exception e){}
             return;
-    }
-            }
+    }*/
+            
+            }}
         //});
     
