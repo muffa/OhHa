@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="dcb-25" name="gol.GridTest" tests="1" time="0.085" timestamp="2012-02-03T09:48:19">
+<testsuite errors="0" failures="0" hostname="dcb-27" name="gol.GridTest" tests="1" time="0.319" timestamp="2012-02-10T09:29:39">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="FI" />
@@ -9,6 +9,7 @@
     <property name="libs.DataBindingME.src" value="/opt/netbeans-7.1/mobility/sources/netbeans_databindingme-src.zip" />
     <property name="libs.j2me_ant_ext.javadoc" value="" />
     <property name="libs.junit.javadoc" value="/fs-2/b/aomarkka/.netbeans/7.1/docs/junit-3.8.2-api.zip" />
+    <property name="javac.includes" value="gol/GridTest.java" />
     <property name="libs.nokiaS80-ant-utils.javadoc" value="" />
     <property name="ant.core.lib" value="/opt/netbeans-7.1/java/ant/lib/ant.jar" />
     <property name="libs.jakarta_slide_ant_webdav.javadoc" value="" />
@@ -65,7 +66,7 @@
     <property name="manifest.available+main.class" value="true" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner gol.GridTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/fs-2/b/aomarkka/NetBeansProjects/GoL/build/test/results/TEST-gol.GridTest.xml crashfile=/fs-2/b/aomarkka/NetBeansProjects/GoL/build/junitvmwatcher2932872437051913740.properties propsfile=/fs-2/b/aomarkka/NetBeansProjects/GoL/build/junit2695818530123627765.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner gol.GridTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/fs-2/b/aomarkka/NetBeansProjects/GoL/build/test/results/TEST-gol.GridTest.xml crashfile=/fs-2/b/aomarkka/NetBeansProjects/GoL/build/junitvmwatcher7641981151436821374.properties propsfile=/fs-2/b/aomarkka/NetBeansProjects/GoL/build/junit4114471856848900103.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -91,6 +92,7 @@
     <property name="libs.j2me_ant_ext.classpath" value="/opt/netbeans-7.1/mobility/modules/org-netbeans-modules-mobility-antext.jar:/opt/netbeans-7.1/java/modules/org-netbeans-modules-classfile.jar" />
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed" />
     <property name="libs.groovy-all.src" value="" />
+    <property name="test.includes" value="gol/GridTest.java" />
     <property name="netbeans.dynamic.classpath" value="/opt/netbeans-7.1/platform/core/core.jar:/opt/netbeans-7.1/platform/core/org-openide-filesystems.jar:/opt/netbeans-7.1/platform/core/locale/core_pt_BR.jar:/opt/netbeans-7.1/platform/core/locale/org-openide-filesystems_pt_BR.jar:/opt/netbeans-7.1/platform/core/locale/core_ru.jar:/opt/netbeans-7.1/platform/core/locale/org-openide-filesystems_ja.jar:/opt/netbeans-7.1/platform/core/locale/core_zh_CN.jar:/opt/netbeans-7.1/platform/core/locale/org-openide-filesystems_ru.jar:/opt/netbeans-7.1/platform/core/locale/core_ja.jar:/opt/netbeans-7.1/platform/core/locale/org-openide-filesystems_zh_CN.jar:/opt/netbeans-7.1/nb/core/org-netbeans-upgrader.jar:/opt/netbeans-7.1/nb/core/locale/core_nb_ru.jar:/opt/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_zh_CN.jar:/opt/netbeans-7.1/nb/core/locale/core_nb_pt_BR.jar:/opt/netbeans-7.1/nb/core/locale/core_nb.jar:/opt/netbeans-7.1/nb/core/locale/core_nb_zh_CN.jar:/opt/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_pt_BR.jar:/opt/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_ja.jar:/opt/netbeans-7.1/nb/core/locale/org-netbeans-upgrader_ru.jar:/opt/netbeans-7.1/nb/core/locale/core_nb_ja.jar" />
     <property name="libs.cdc-agui-swing-layout.maven-pom" value="" />
     <property name="libs.cdc-pp-awt-layout.src" value="/opt/netbeans-7.1/mobility/sources/cdc-pp-awt-layout-src.zip" />
@@ -114,6 +116,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="/" />
+    <property name="javac.includesfile.binary" value="/fs-2/b/aomarkka/NetBeansProjects/GoL/null2064357483" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="javac.test.processorpath" value=":build/classes:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-3.8.2.jar:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-4.10.jar" />
     <property name="netbeans.buildnumber" value="201112071828" />
@@ -124,6 +127,7 @@
     <property name="libs.junit.classpath" value="/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-3.8.2.jar" />
     <property name="libs.jaxb.javadoc" value="/opt/netbeans-7.1/ide/docs/jaxb-api-doc.zip" />
     <property name="libs.struts.classpath" value="/opt/netbeans-7.1/enterprise/modules/ext/struts/antlr-2.7.2.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/bsf-2.3.0.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/commons-beanutils-1.8.0.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/commons-chain-1.2.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/commons-digester-1.8.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/commons-fileupload-1.1.1.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/commons-io-1.1.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/commons-logging-1.0.4.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/commons-validator-1.3.1.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/jstl-1.0.2.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/oro-2.0.8.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/standard-1.0.6.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-core-1.3.10.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-el-1.3.10.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-extras-1.3.10.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-faces-1.3.10.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-mailreader-dao-1.3.10.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-scripting-1.3.10.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-taglib-1.3.10.jar:/opt/netbeans-7.1/enterprise/modules/ext/struts/struts-tiles-1.3.10.jar" />
+    <property name="javac.includes.binary" value="/fs-2/b/aomarkka/NetBeansProjects/GoL/build/test/classes/gol/GridTest.class" />
     <property name="ant.home" value="/opt/netbeans-7.1/java/ant" />
     <property name="libs.junit_4.src" value="/fs-2/b/aomarkka/.netbeans/7.1/docs/junit-4.10-sources.jar" />
     <property name="libs.absolutelayout.maven-pom" value="" />
@@ -155,7 +159,7 @@
     <property name="libs.primefaces.javadoc" value="" />
     <property name="libs.spring-framework300.maven-pom" value="" />
     <property name="run.test.classpath" value=":build/classes:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-3.8.2.jar:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-4.10.jar:build/test/classes" />
-    <property name="ant.project.invoked-targets" value="test" />
+    <property name="ant.project.invoked-targets" value="test-single" />
     <property name="libs.swing-layout.javadoc" value="/opt/netbeans-7.1/platform/docs/swing-layout-1.0.4-doc.zip" />
     <property name="libs.ejb3-persistence.maven-pom" value="" />
     <property name="libs.DataBindingME-SVG.classpath" value="/opt/netbeans-7.1/mobility/modules/ext/netbeans_databindingme_svg.jar" />
@@ -286,13 +290,13 @@
     <property name="libs.NetBeans MIDP Components WMA.classpath" value="/opt/netbeans-7.1/mobility/modules/ext/netbeans_midp_components_wma.jar" />
     <property name="do.archive+main.class.available" value="true" />
     <property name="libs.sjmc-ant-utils.src" value="" />
-    <property name="libs.cdc-agui-swing-layout.javadoc" value="" />
     <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.cdc-agui-swing-layout.javadoc" value="" />
     <property name="libs.javac-api.classpath" value="/opt/netbeans-7.1/java/modules/ext/javac-api-nb-7.0-b07.jar" />
     <property name="java.version" value="1.6.0_26" />
     <property name="libs.nokiaS80-ant-utils.classpath" value="/opt/netbeans-7.1/mobility/modules/ext/org-netbeans-modules-j2me-cdc-project-nokiaS80.jar" />
-    <property name="javadoc.version" value="false" />
     <property name="libs.NetBeans MIDP Components WMA.javadoc" value="/opt/netbeans-7.1/mobility/modules/docs/netbeans_midp_components_wma-api.zip" />
+    <property name="javadoc.version" value="false" />
     <property name="libs.MySQLDriver.javadoc" value="" />
     <property name="org.openide.version" value="deprecated" />
     <property name="source.encoding" value="UTF-8" />
@@ -311,11 +315,11 @@
     <property name="libs.jaxb.classpath" value="/opt/netbeans-7.1/ide/modules/ext/jaxb/jaxb-impl.jar:/opt/netbeans-7.1/ide/modules/ext/jaxb/jaxb-xjc.jar:/opt/netbeans-7.1/ide/modules/ext/jaxb/jaxb1-impl.jar:/opt/netbeans-7.1/ide/modules/ext/jaxb/activation.jar:/opt/netbeans-7.1/ide/modules/ext/jaxb/api/jaxb-api.jar:/opt/netbeans-7.1/ide/modules/ext/jaxb/api/jsr173_api.jar" />
     <property name="do.depend" value="false" />
     <property name="dist.javadoc.dir" value="dist/javadoc" />
-    <property name="libs.swing-layout.classpath" value="/opt/netbeans-7.1/platform/modules/ext/swing-layout-1.0.4.jar" />
     <property name="libs.spring-webmvc3.0.classpath" value="/opt/netbeans-7.1/java/modules/ext/spring-3.0/spring-webmvc-3.0.6.RELEASE.jar" />
+    <property name="libs.swing-layout.classpath" value="/opt/netbeans-7.1/platform/modules/ext/swing-layout-1.0.4.jar" />
     <property name="libs.restlib.src" value="" />
-    <property name="build.generated.dir" value="build/generated" />
     <property name="javac.source" value="1.5" />
+    <property name="build.generated.dir" value="build/generated" />
     <property name="line.separator" value="&#xa;" />
     <property name="libs.hibernate-persistence.src" value="" />
     <property name="libs.nb_svg_midp_components.javadoc" value="/opt/netbeans-7.1/mobility/modules/docs/nb_svg_midp_components-api.zip" />
@@ -338,7 +342,6 @@
     <property name="libs.nokiadeployment.src" value="" />
     <property name="libs.savaje-ant-utils.javadoc" value="" />
     <property name="libs.struts.javadoc" value="/opt/netbeans-7.1/enterprise/docs/struts-1.3.10-javadoc.zip" />
-    <property name="ignore.failing.tests" value="true" />
     <property name="libs.cdc-ant-utils.maven-pom" value="" />
     <property name="libs.primefaces.src" value="" />
     <property name="libs.cdc-agui-swing-layout.classpath" value="/opt/netbeans-7.1/mobility/modules/ext/cdc-agui-swing-layout.jar" />
@@ -352,17 +355,17 @@
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
     <property name="default.javac.source" value="1.6" />
     <property name="debug-transport-by-os" value="dt_socket" />
-    <property name="sun.jnu.encoding" value="UTF-8" />
     <property name="libs.MySQLDriver.src" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
     <property name="libs.ant-contrib.maven-pom" value="" />
     <property name="libs.nokiadeployment.javadoc" value="" />
     <property name="build.test.results.dir" value="build/test/results" />
     <property name="java.runtime.version" value="1.6.0_26-b03" />
     <property name="libs.ejb3-persistence.javadoc" value="" />
     <property name="libs.NetBeans MIDP Components.src" value="/opt/netbeans-7.1/mobility/sources/netbeans_midp_components_basic-src.zip" />
-    <property name="libs.sjmc-ant-utils.javadoc" value="" />
     <property name="manifest.available+main.class+mkdist.available" value="true" />
     <property name="jna.platform.library.path" value="/usr/lib64:/lib64" />
+    <property name="libs.sjmc-ant-utils.javadoc" value="" />
     <property name="default.javac.target" value="1.6" />
     <property name="libs.junit_4.classpath" value="/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-4.10.jar" />
     <property name="user.timezone" value="" />
@@ -376,11 +379,11 @@
     <property name="libs.semc-ant-utils.src" value="" />
     <property name="libs.absolutelayout.classpath" value="/opt/netbeans-7.1/java/modules/ext/AbsoluteLayout.jar" />
     <property name="excludes" value="" />
-    <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.metro.classpath" value="/opt/netbeans-7.1/ide/modules/ext/jaxb/activation.jar:/opt/netbeans-7.1/enterprise/modules/ext/metro/webservices-api.jar:/opt/netbeans-7.1/enterprise/modules/ext/metro/webservices-extra-api.jar:/opt/netbeans-7.1/enterprise/modules/ext/metro/webservices-extra.jar:/opt/netbeans-7.1/enterprise/modules/ext/metro/webservices-rt.jar:/opt/netbeans-7.1/enterprise/modules/ext/metro/webservices-tools.jar" />
+    <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.DataBindingME.javadoc" value="/opt/netbeans-7.1/mobility/modules/docs/netbeans_databindingme-api.zip" />
-    <property name="java.class.path" value="/fs-2/b/aomarkka/NetBeansProjects/GoL/build/classes:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-3.8.2.jar:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-4.10.jar:/fs-2/b/aomarkka/NetBeansProjects/GoL/build/test/classes:/opt/netbeans-7.1/java/ant/lib/ant-launcher.jar:/opt/netbeans-7.1/java/ant/lib/ant.jar:/opt/netbeans-7.1/java/ant/lib/ant-junit.jar:/opt/netbeans-7.1/java/ant/lib/ant-junit4.jar" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="java.class.path" value="/fs-2/b/aomarkka/NetBeansProjects/GoL/build/classes:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-3.8.2.jar:/fs-2/b/aomarkka/.netbeans/7.1/modules/ext/junit-4.10.jar:/fs-2/b/aomarkka/NetBeansProjects/GoL/build/test/classes:/opt/netbeans-7.1/java/ant/lib/ant-launcher.jar:/opt/netbeans-7.1/java/ant/lib/ant.jar:/opt/netbeans-7.1/java/ant/lib/ant-junit.jar:/opt/netbeans-7.1/java/ant/lib/ant-junit4.jar" />
     <property name="do.mkdist" value="true" />
     <property name="libs.absolutelayout.src" value="" />
     <property name="libs.cdc-pp-awt-layout.maven-pom" value="" />
@@ -391,8 +394,8 @@
     <property name="libs.toplink.javadoc" value="" />
     <property name="sun.desktop" value="gnome" />
     <property name="libs.nb_svg_midp_components.maven-pom" value="" />
-    <property name="libs.restlib.javadoc" value="/opt/netbeans-7.1/enterprise/docs/jersey-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-apache-client-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-atom-abdera-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-guice-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-multipart-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-simple-server-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-spring-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/oauth-client-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/oauth-server-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/oauth-signature-1.8-javadoc.zip" />
     <property name="libs.NetBeans MIDP Components PDA.maven-pom" value="" />
+    <property name="libs.restlib.javadoc" value="/opt/netbeans-7.1/enterprise/docs/jersey-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-apache-client-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-atom-abdera-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-guice-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-multipart-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-simple-server-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/jersey-spring-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/oauth-client-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/oauth-server-1.8-javadoc.zip:/opt/netbeans-7.1/enterprise/docs/oauth-signature-1.8-javadoc.zip" />
     <property name="libs.JAXB-ENDORSED.classpath" value="/opt/netbeans-7.1/ide/modules/ext/jaxb/api/jaxb-api.jar" />
     <property name="libs.eclipselink.classpath" value="/opt/netbeans-7.1/java/modules/ext/eclipselink/eclipselink-2.3.0.jar:/opt/netbeans-7.1/java/modules/ext/eclipselink/javax.persistence-2.0.jar:/opt/netbeans-7.1/java/modules/ext/eclipselink/org.eclipse.persistence.jpa.jpql_1.0.0.jar" />
     <property name="libs.beans-binding.javadoc" value="/opt/netbeans-7.1/java/docs/beansbinding-1.2.1-doc.zip" />
@@ -412,236 +415,159 @@
     <property name="libs.junit.src" value="" />
     <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
     <property name="main.class" value="gol.Main" />
-    <property name="libs.CopyLibs.src" value="" />
     <property name="build.dir" value="build" />
+    <property name="libs.CopyLibs.src" value="" />
     <property name="libs.jsp-compilation.classpath" value="/opt/netbeans-7.1/java/ant/lib/ant.jar:/opt/netbeans-7.1/enterprise/modules/ext/servlet3.0-jsp2.2-api.jar:/opt/netbeans-7.1/enterprise/modules/ext/glassfish-jspparser-3.0.jar:/opt/netbeans-7.1/enterprise/modules/ext/jsf-2_1/jsf-api.jar:/opt/netbeans-7.1/enterprise/modules/ext/jstl.jar:/opt/netbeans-7.1/java/ant/lib/ant-launcher.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
     <property name="file.encoding" value="UTF-8" />
     <property name="build.classes.excludes" value="**/*.java,**/*.form" />
-    <property name="jdkBug6558476" value="false" />
     <property name="javadoc.nonavbar" value="false" />
+    <property name="jdkBug6558476" value="false" />
     <property name="platform.active" value="default_platform" />
   </properties>
-  <testcase classname="gol.GridTest" name="testAsdf" time="0.032" />
-  <system-out><![CDATA[oo**o*oo*o
-*oo*oooo**
-oooooo**oo
-*oooooo*o*
-*oooooo***
-oo**oooo**
-*o*ooooooo
-*oooo*oooo
-ooo*ooo**o
-**oo*oo*o*
+  <testcase classname="gol.GridTest" name="testAsdf" time="0.023" />
+  <system-out><![CDATA[o*o*oooo**
+*oo*oo*ooo
+oo*ooooooo
+ooo**oo*oo
+***oo***oo
+oooo*ooooo
+oo*oo*o*o*
+*ooo*oooo*
+oooo****o*
+***oo*o*o*
 
-oo***ooo**
-oo***o*o**
-oooooo**o*
-oooooooo**
-o*ooooo*oo
-oo**ooo*o*
-oo**oooooo
-o*oooooooo
-**oo*o***o
-ooooooo*oo
-
-oo*o**o***
-oo*o*o*ooo
-ooo*o**o*o
-oooooo*oo*
-oo*oooo*o*
-o*o*oooo*o
+oo*ooooooo
 o*o*oooooo
-**o*ooo*oo
-**oooo***o
-oooooo***o
+oo*o*ooooo
+ooo***o*oo
+o**oo***oo
+oo***oo**o
+ooo***oo*o
+ooo**oo*o*
+*oo**oo*o*
+o*oo**o*oo
 
-oooo*****o
-oo*oo*ooo*
-ooo**o*ooo
-ooooo**oo*
-oo*oooo*o*
-o*o*oooo*o
-o****ooooo
-oooooo***o
-***ooooooo
-oooooo*o*o
-
-oooo*****o
-oooooooo*o
-ooo**o*ooo
-ooo******o
-oo*ooo**o*
-o**o*ooo*o
-o*o**ooo*o
-*oooooo*oo
-o*oooo*o*o
+oo*ooooooo
+o*o*oooooo
+oo*oo*oooo
+o*ooooo*oo
 o*oooooooo
-
-ooooo****o
-ooo*oooo*o
-ooo*oo*o*o
-oo*ooooo*o
-o**oooooo*
-o*oo**oo**
-**o**oo**o
-***oooo**o
-**ooooo*oo
-oooooooooo
-
-oooooo***o
-oooo**o***
-oo**oooo**
-o***ooo***
-o***ooooo*
-oooo**o*o*
-ooo****ooo
-ooo*oo*ooo
-*o*oooo**o
-oooooooooo
-
+o*oooooo*o
 ooooo**oo*
-ooo***oooo
-o*oooo*ooo
-oooo*oo*oo
-o*oooo****
-oooooooo*o
-ooo*ooo*oo
-oo**oo*ooo
-ooooooo*oo
-oooooooooo
+oo*ooo**o*
+oo*oooo*oo
+ooo****o*o
 
-ooooo**ooo
-oooo*ooooo
-ooo*oo*ooo
-ooooo*oooo
-oooooo*oo*
-oooooo*oo*
-oo**ooo*oo
-oo**oo**oo
+oo*ooooooo
+o*o*oooooo
+o**ooooooo
+o**ooooooo
+***ooooooo
 oooooooooo
-oooooooooo
-
-ooooo*oooo
-oooo*o*ooo
-oooo**oooo
-ooooo**ooo
-ooooo**ooo
-oooooo***o
-oo**ooo**o
-oo**oo**oo
-oooooooooo
-oooooooooo
-
-ooooo*oooo
-oooo*o*ooo
-oooo*ooooo
-oooooooooo
-oooooooooo
-ooooo*oo*o
-oo**oooooo
-oo**oo***o
-oooooooooo
-oooooooooo
-
-ooooo*oooo
-oooo*ooooo
-ooooo*oooo
-oooooooooo
-oooooooooo
-oooooooooo
-oo***o*o*o
-oo**ooo*oo
-ooooooo*oo
-oooooooooo
-
-oooooooooo
-oooo**oooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo*oooooo
-oo*o*oo*oo
-oo*o*o***o
-oooooooooo
-oooooooooo
-
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooo*oooooo
-oo*o*****o
-ooooo****o
-ooooooo*oo
-oooooooooo
-
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
+ooooo**oo*
+ooooo*o*oo
+oo*o*ooooo
 ooo*****oo
-ooo**ooo*o
-oooo*ooooo
-ooooooo**o
-oooooooooo
 
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooo***ooo
-ooo*o***oo
-oooooo**oo
-ooo**oo**o
-oooooooooo
-oooooooooo
-
-oooooooooo
-oooooooooo
-oooooooooo
-ooooo*oooo
-oooo*oo*oo
-oooooooooo
+oo*ooooooo
+o*o*oooooo
+*oo*oooooo
 ooo*oooooo
-oooooo***o
+*o*ooooooo
+o*oooooooo
+ooooo**ooo
+oooo**oooo
+ooooooo*oo
+ooo****ooo
+
+oo*ooooooo
+o*o*oooooo
+ooo**ooooo
+o***oooooo
+o**ooooooo
+o*oooooooo
+oooo***ooo
+oooo**oooo
+ooo*oooooo
+oooo***ooo
+
+oo*ooooooo
+ooo**ooooo
+o*oo*ooooo
+o*oo*ooooo
+*oo*oooooo
+o**oo*oooo
+oooo*o*ooo
+ooo*oo*ooo
+ooo*oo*ooo
+oooo**oooo
+
+ooo*oooooo
+oo***ooooo
+oo*o**oooo
+*****ooooo
+*oo**ooooo
+o*****oooo
+oo***o*ooo
+ooo**o**oo
+ooo*oo*ooo
+oooo**oooo
+
+oo***ooooo
+oo*oo*oooo
+ooooo*oooo
+*ooooooooo
+*ooooooooo
+o*oooooooo
+o*oooo**oo
+oooooo**oo
+ooo*oo**oo
+oooo**oooo
+
+oo***ooooo
+oo*oo*oooo
 oooooooooo
 oooooooooo
+**oooooooo
+**oooooooo
+oooooo**oo
+ooooo*oo*o
+oooo*oo*oo
+oooo***ooo
+
+oo***ooooo
+oo*o*ooooo
+oooooooooo
+oooooooooo
+**oooooooo
+**oooooooo
+oooooo**oo
+ooooo*oo*o
+oooo*oo*oo
+oooo***ooo
+
+oo*o*ooooo
+oo*o*ooooo
+oooooooooo
+oooooooooo
+**oooooooo
+**oooooooo
+oooooo**oo
+ooooo*oo*o
+oooo*oo*oo
+oooo***ooo
 
 oooooooooo
 oooooooooo
 oooooooooo
 oooooooooo
-oooooooooo
-oooooooooo
-ooooooo*oo
-ooooooo*oo
-ooooooo*oo
-oooooooooo
-
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooo***o
-oooooooooo
-oooooooooo
-
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-oooooooooo
-ooooooo*oo
-ooooooo*oo
-ooooooo*oo
-oooooooooo
+**oooooooo
+**oooooooo
+oooooo**oo
+ooooo*oo*o
+oooo*oo*oo
+oooo***ooo
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -48,7 +48,7 @@ public class Grid {
         h = ht;
         prev = null;
         cells = new Cell[wh][ht];
-        for(i=0;i<wh;i++) for(j=0;j<ht;j++) cells[i][j] = new HighCell();
+        for(i=0;i<wh;i++) for(j=0;j<ht;j++) cells[i][j] = new ConwayCell();
         for(i=0;i<wh;i++) for(j=0;j<ht;j++) cells[i][j].setStatus((gen.nextInt(3) < 1));
         for(i=0;i<wh;i++) { for(j=0;j<ht;j++) {
             if(i-1 != -1) cells[i][j].addToNbh(cells[i-1][j]);
