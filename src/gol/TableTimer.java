@@ -24,7 +24,7 @@ public class TableTimer extends Timer implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        if(ui.foo.iterate());
+        if(!ui.foo.iterate());
         else System.out.println("Sykli");
         for(i=0;i<ui.w;i++) for(j=0;j<ui.h;j++) {
                         ui.table.setValueAt(" ", i, j);

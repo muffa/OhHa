@@ -6,6 +6,11 @@ package gol;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import java.awt.event.KeyEvent;
+
 import javax.swing.JTable;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -15,13 +20,14 @@ import javax.swing.*;
 
 
 
-public class GoLUI extends JPanel  {
+public class GoLUI extends JPanel implements ActionListener {
     private boolean DEBUG = true;
     public JTable table;
     public Grid foo;
     public int w = 50;
     public int h = 50;
     public int i,j;
+    TableTimer timer;
     public GoLUI() {
         super(new GridLayout(1,0));
 
@@ -72,10 +78,18 @@ public class GoLUI extends JPanel  {
         JButton b1 = new JButton("Play/Pause");
         b1.setActionCommand("play");
         //b1.setVerticalTextPosition(AbstractButton.LEFT);
-        //b1.addActionListener(this);
-        //add(b1);
+        b1.addActionListener(this);
+        add(b1);
+                    timer = new TableTimer(this,1000);
+            timer.start();
     }
-
+ public void actionPerformed(ActionEvent e) {
+      if ("play".equals(e.getActionCommand())) {
+          if(timer.isRunning()) timer.stop();
+          else timer.start();
+      }
+ }
+ 
 
     private void printDebugData(JTable table) {
         int numRows = table.getRowCount();
@@ -126,8 +140,8 @@ public class GoLUI extends JPanel  {
         //javax.swing.SwingUtilities.invokeLater(new Runnable() {
             //public void run() {
             GoLUI cntPn = createAndShowGUI();
-            TableTimer timer = new TableTimer(cntPn,1000);
-            timer.start();
+     //       timer = new TableTimer(cntPn,1000);
+      //      timer.start();
             /*try{
             int i,j;
             
