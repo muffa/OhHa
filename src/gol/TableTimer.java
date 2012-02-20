@@ -26,7 +26,10 @@ public class TableTimer extends Timer implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(!ui.foo.iterate());
         else {
-            System.out.println("Sykli");
+            //System.out.println("Sykli");
+            JOptionPane cycle = new JOptionPane();
+            JFrame cycleInfo = new JFrame();
+            cycle.showMessageDialog(cycleInfo, "A cycle has been found.");
             this.stop();
         }
         for(i=0;i<ui.w;i++) for(j=0;j<ui.h;j++) {

@@ -29,8 +29,8 @@ public class GoLUI extends JPanel implements ActionListener {
     public int i,j;
     TableTimer timer;
     public GoLUI() {
-        super(new GridLayout(1,0));
-
+        //super(new GridLayout(2,0));
+        super();
         String[] columnNames = new String[w]; //{"1st", "2nd","3rd","4th","5th"};
         for(i=0;i<w;i++) columnNames[i] = " ";
         
@@ -42,7 +42,7 @@ public class GoLUI extends JPanel implements ActionListener {
         }
 
         table = new JTable(data, columnNames);
-        table.setPreferredScrollableViewportSize(new Dimension(1000, 1000));
+        table.setPreferredScrollableViewportSize(new Dimension(1000, 800));
         table.setFillsViewportHeight(true);
         table.setDefaultRenderer(Object.class, new NewTableCellRenderer());
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
