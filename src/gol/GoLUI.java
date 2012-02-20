@@ -50,6 +50,7 @@ public class GoLUI extends JPanel implements ActionListener {
 
         if (DEBUG) {
             table.addMouseListener(new MouseAdapter() {
+                @Override
                 public void mouseClicked(MouseEvent e) {
                     
                     Object asdf = e.getSource();
@@ -80,13 +81,26 @@ public class GoLUI extends JPanel implements ActionListener {
         //b1.setVerticalTextPosition(AbstractButton.LEFT);
         b1.addActionListener(this);
         add(b1);
+        JButton b2 = new JButton("Clear");
+        b2.setActionCommand("clear");
+        b2.addActionListener(this);
+        add(b2);
                     timer = new TableTimer(this,1000);
             timer.start();
+        
     }
  public void actionPerformed(ActionEvent e) {
       if ("play".equals(e.getActionCommand())) {
           if(timer.isRunning()) timer.stop();
           else timer.start();
+      }
+      if ("clear".equals(e.getActionCommand())) {
+          for(i=0;i<w;i++) for(j=0;j<h;j++) {
+              table.setValueAt(" ", i, j);
+              foo.giveCell(i,j).setStatus(false);
+          }
+          timer.stop();
+          
       }
  }
  
@@ -115,7 +129,7 @@ public class GoLUI extends JPanel implements ActionListener {
     private static GoLUI createAndShowGUI()  {
         
         //Create and set up the window.
-        JFrame frame = new JFrame("SimpleTableDemo");
+        JFrame frame = new JFrame("Conway's Game of Life");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Create and set up the content pane.

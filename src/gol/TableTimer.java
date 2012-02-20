@@ -25,7 +25,10 @@ public class TableTimer extends Timer implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if(!ui.foo.iterate());
-        else System.out.println("Sykli");
+        else {
+            System.out.println("Sykli");
+            this.stop();
+        }
         for(i=0;i<ui.w;i++) for(j=0;j<ui.h;j++) {
                         ui.table.setValueAt(" ", i, j);
                         if(ui.foo.giveCell(i,j).getStatus()) ui.table.setValueAt("ALIVE", i, j);
