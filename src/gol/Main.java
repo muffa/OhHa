@@ -18,7 +18,8 @@ public class Main {
         // TODO code application logic here
              GoLUI cntPn = new GoLUI();
              
-             cntPn.main(new String[1]);
+             cntPn.createAndShowGUI();
+             
              
     }
 

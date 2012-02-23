@@ -126,7 +126,7 @@ public class GoLUI extends JPanel implements ActionListener {
      * this method should be invoked from the
      * event-dispatching thread.
      */
-    private static GoLUI createAndShowGUI()  {
+    public static GoLUI createAndShowGUI()  {
         
         //Create and set up the window.
         JFrame frame = new JFrame("Conway's Game of Life");
