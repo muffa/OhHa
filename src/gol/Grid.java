@@ -58,6 +58,14 @@ public class Grid {
         }}
     }
     /**
+     * Gives a new reseted Grid with random patterns
+     * 
+     * @return New grid
+     */
+    public Grid reset() {
+        return new Grid(w,h);
+    }
+    /**
      * Returns a cell with coordinates (wh,ht).
      * @param wh x coordinate
      * @param ht y coordinate

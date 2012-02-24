@@ -48,7 +48,7 @@ public class GoLUI extends JPanel implements ActionListener {
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         table.repaint();
 
-        if (DEBUG) {
+        
             table.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
@@ -57,7 +57,7 @@ public class GoLUI extends JPanel implements ActionListener {
                     int row = ((JTable)asdf).getSelectedRow();
                     int col = ((JTable)asdf).getSelectedColumn();
                     foo.giveCell(row,col).setStatus((foo.giveCell(row,col).getStatus()) == false);
-                    System.out.println("r: " + row + " c: " +  col);
+                    if (DEBUG) System.out.println("r: " + row + " c: " +  col);
                     if(foo.giveCell(row,col).getStatus()) table.setValueAt(" ", row, col);
                     else table.setValueAt("ALIVE", row, col);
                     
@@ -69,7 +69,7 @@ public class GoLUI extends JPanel implements ActionListener {
                     //printDebugData(table);
                 }
             });
-        }
+        
 
         //Create the scroll pane and add the table to it.
         JScrollPane scrollPane = new JScrollPane(table);
@@ -85,8 +85,13 @@ public class GoLUI extends JPanel implements ActionListener {
         b2.setActionCommand("clear");
         b2.addActionListener(this);
         add(b2);
-                    timer = new TableTimer(this,1000);
-            timer.start();
+        JButton b3 = new JButton("Reset");
+        b3.setActionCommand("reset");
+        b3.addActionListener(this);
+        add(b3);
+              
+        timer = new TableTimer(this,1000);
+        timer.start();
         
     }
  public void actionPerformed(ActionEvent e) {
@@ -100,6 +105,15 @@ public class GoLUI extends JPanel implements ActionListener {
               foo.giveCell(i,j).setStatus(false);
           }
           timer.stop();
+          
+      }
+      if ("reset".equals(e.getActionCommand())) {
+          foo = foo.reset();
+          for(i=0;i<w;i++) for(j=0;j<h;j++) {
+            table.setValueAt(" ", i, j);
+            if(foo.giveCell(i,j).getStatus()) table.setValueAt("ALIVE", i, j);
+          }
+          table.repaint();
           
       }
  }
