@@ -41,20 +41,23 @@ public class GridTest {
      */
     @Test
     public void testAsdf() {
+        
         Grid grid = new Grid(11,11);
         assertFalse(null == grid.giveCell(10, 10));
         assertTrue(null == grid.giveCell(10,11));
         assertTrue(grid.giveCell(5,5).isInNbh(grid.giveCell(4, 4)));
         assertFalse(grid.giveCell(5, 5).isInNbh(grid.giveCell(3, 4)));
-        Grid bar = new Grid(10,10);
-        int asdf;
-        bar.printGrid();
-        boolean foo = false;
-        while(!bar.iterate()) {
-        
-        
-        System.out.println();
-        bar.printGrid();
+        int i;
+        for (i=1;i<10;i++) {
+            grid = new Grid(1024,1024);
+            assertFalse(grid.checkForCycles());
+            while(grid.iterate());
+            assertTrue(grid.checkForCycles());
+            grid = grid.reset();
+            assertFalse(grid.checkForCycles());
         }
+        
+        
+
     }
 }

@@ -10,7 +10,9 @@ package gol;
  * @author muffa
  */
 public class ConwayCell extends AbstractCell {
-
+/**
+     * Creates a new ConwayCell. Boolean values are both true.
+     */
     public ConwayCell() {
         status = true;
         destiny = true;
@@ -27,6 +29,13 @@ public class ConwayCell extends AbstractCell {
         else if(j == 2 && status) destiny = true;
         else destiny = false;
     }
+    /**
+     * Adds a given cell to the neighborhood of the current cell.
+     * As this relation is clearly symmetric, we will take advantage of that.
+     *
+     * @param cell Cell to be added to the nbh
+     * @return true if adding succeeded
+     */
     public boolean addToNbh(Cell cell){
            int i;
         for(i=0;i<8;i++){

@@ -14,7 +14,10 @@ public class HighCell extends AbstractCell {
         status = true;
         destiny = true;
     }
-
+    /**
+     * Calculates whether the cell will be alive or dead after the next step.
+     * 
+     */
     public void setDestiny() {
         int j = 0;
         int i;
@@ -25,12 +28,18 @@ public class HighCell extends AbstractCell {
         else destiny = false;
     
     }
+        /**
+     * Adds a given cell to the neighborhood of the current cell.
+     * As this relation is clearly symmetric, we will take advantage of that.
+     *
+     * @param cell Cell to be added to the nbh
+     * @return true if adding succeeded
+     */
        public boolean addToNbh(Cell cell){
            int i;
         for(i=0;i<8;i++){
             if(nbh[i] == cell) return false;
             if(nbh[i] == null) {
-                
                 nbh[i] = (HighCell)cell;
                 cell.addToNbh(this);
                 return true;

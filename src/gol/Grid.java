@@ -76,23 +76,10 @@ public class Grid {
         return null;
     }
     /**
-     * Prints the current grid in text form.
-     * 
-     */
-    public void printGrid(){
-        for(i=0;i<w;i++) {
-            for(j=0;j<h;j++) {
-                if(cells[i][j].getStatus()) System.out.print("*");
-                else System.out.print("o");
-            }
-            System.out.println();
-        }
-    }
-    /**
      * Advances the cells to another generation.
      * Returns true if the conditions for ending are met.
      * 
-     * asdf
+     * 
      * 
      * @return Ending criterion met
      */

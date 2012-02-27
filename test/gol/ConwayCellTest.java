@@ -43,9 +43,15 @@ public class ConwayCellTest {
         ConwayCell test = new ConwayCell();
         assertTrue(test.getStatus());
         ConwayCell test2 = new ConwayCell();
-        assertTrue(test2.getStatus());
+        assertTrue(test.getDestiny());
+        
         test2.setStatus(false);
         assertFalse(test2.getStatus());
+        test2.setStatus(true);
+        assertTrue(test2.getStatus());
+        
+        
+        
         assertTrue(test.addToNbh(test2));
         assertFalse(test.addToNbh(test2));
         assertTrue(test.isInNbh(test2));
@@ -57,16 +63,23 @@ public class ConwayCellTest {
         for(i=0;i<7;i++){
             assertTrue(test.addToNbh(foo[i]));
         }
+        assertFalse(test.addToNbh(foo[8]));
+        
         test2.setStatus(true);
+        test2.setDestiny();
+        assertFalse(test2.getDestiny());
+
         test2.addToNbh(foo[0]);
+        test2.setDestiny();
+        assertTrue(test2.getDestiny());
         test2.addToNbh(foo[1]);
         test2.setDestiny();
         assertTrue(test2.getDestiny());
-        test2.addToNbh(test);
+        
         test2.addToNbh(foo[2]);
         test2.setDestiny();
         assertFalse(test2.getDestiny());
-        assertFalse(test.addToNbh(foo[8]));
+        
         
         // TODO review the generated test code and remove the default call to fail.
        // fail("The test case is a prototype.");
