@@ -16,6 +16,7 @@ import javax.swing.*;
 public class TableTimer extends Timer implements ActionListener {
     private GoLUI ui;
     private int i,j;
+    
     public TableTimer(GoLUI ui, int time) {
         super(time, null);
         this.ui = ui;
@@ -24,7 +25,7 @@ public class TableTimer extends Timer implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        if(!ui.foo.iterate());
+        if(!ui.grid.iterate());
         else {
             //System.out.println("Sykli");
             JOptionPane cycle = new JOptionPane();
@@ -33,9 +34,9 @@ public class TableTimer extends Timer implements ActionListener {
             this.stop();
         }
         for(i=0;i<ui.w;i++) for(j=0;j<ui.h;j++) {
-                        ui.table.setValueAt(" ", i, j);
-                        if(ui.foo.giveCell(i,j).getStatus()) ui.table.setValueAt("ALIVE", i, j);
-                    }
+            ui.table.setValueAt(" ", i, j);
+            if(ui.grid.giveCell(i,j).getStatus()) ui.table.setValueAt("ALIVE", i, j);
+        }
                 
     
 }}
