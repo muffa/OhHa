@@ -84,6 +84,9 @@ public class HighCellTest {
         test2.setStatus(false);
         test2.setDestiny();
         assertTrue(test2.getDestiny());
+        test2.setStatus(true);
+        test2.setDestiny();
+        assertFalse(test2.getDestiny());
         test2.addToNbh(foo[5]);
         test2.setDestiny();
         assertFalse(test2.getDestiny());

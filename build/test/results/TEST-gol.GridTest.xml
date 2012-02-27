@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="riemann" name="gol.GridTest" tests="1" time="18.691" timestamp="2012-02-27T18:39:57">
+<testsuite errors="0" failures="0" hostname="riemann" name="gol.GridTest" tests="1" time="14.745" timestamp="2012-02-27T21:03:31">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="US" />
-    <property name="javac.test.classpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-3.8.2.jar:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar" />
+    <property name="javac.test.classpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar" />
     <property name="ant.file.type.GoL" value="file" />
     <property name="libs.jsf20.maven-pom" value="" />
     <property name="libs.DataBindingME.src" value="/usr/local/netbeans-7.0.1/mobility/sources/netbeans_databindingme-src.zip" />
@@ -70,7 +70,7 @@
     <property name="manifest.available+main.class" value="true" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner gol.GridTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/muffa/NetBeansProjects/OhHa/build/test/results/TEST-gol.GridTest.xml crashfile=/home/muffa/NetBeansProjects/OhHa/build/junitvmwatcher8784645603602099512.properties propsfile=/home/muffa/NetBeansProjects/OhHa/build/junit3901339409839105483.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner gol.GridTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/muffa/NetBeansProjects/OhHa/build/test/results/TEST-gol.GridTest.xml crashfile=/home/muffa/NetBeansProjects/OhHa/build/junitvmwatcher5346331122848185921.properties propsfile=/home/muffa/NetBeansProjects/OhHa/build/junit5415563857283698029.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -120,10 +120,10 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="/" />
-    <property name="javac.includesfile.binary" value="/home/muffa/NetBeansProjects/OhHa/null1228607449" />
+    <property name="javac.includesfile.binary" value="/home/muffa/NetBeansProjects/OhHa/null2054335633" />
     <property name="libs.ActiveSync.classpath" value="/usr/local/netbeans-7.0.1/mobility/modules/ext/nbactivesync-5.0.jar" />
     <property name="libs.junit_4.maven-pom" value="" />
-    <property name="javac.test.processorpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-3.8.2.jar:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar" />
+    <property name="javac.test.processorpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar" />
     <property name="netbeans.buildnumber" value="201107282000" />
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="build.generated.sources.dir" value="build/generated-sources" />
@@ -164,7 +164,7 @@
     <property name="manifest.available" value="true" />
     <property name="libs.primefaces.javadoc" value="" />
     <property name="libs.spring-framework300.maven-pom" value="" />
-    <property name="run.test.classpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-3.8.2.jar:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar:build/test/classes" />
+    <property name="run.test.classpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar:build/test/classes" />
     <property name="ant.project.invoked-targets" value="test-single" />
     <property name="libs.swing-layout.javadoc" value="/usr/local/netbeans-7.0.1/platform/docs/swing-layout-1.0.4-doc.zip" />
     <property name="libs.swing-app-framework.javadoc" value="/usr/local/netbeans-7.0.1/java/docs/appframework-1.0.3-doc.zip" />
@@ -196,7 +196,7 @@
     <property name="libs.ricoh-ant-utils.src" value="" />
     <property name="libs.spring-webmvc.src" value="" />
     <property name="libs.ant-contrib.javadoc" value="" />
-    <property name="debug.test.classpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-3.8.2.jar:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar:build/test/classes" />
+    <property name="debug.test.classpath" value=":build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar:build/test/classes" />
     <property name="libs.javaee-endorsed-api-6.0.classpath" value="/usr/local/netbeans-7.0.1/enterprise/modules/ext/javaee6-endorsed/javax.annotation.jar:/usr/local/netbeans-7.0.1/enterprise/modules/ext/javaee6-endorsed/jaxb-api-osgi.jar:/usr/local/netbeans-7.0.1/enterprise/modules/ext/javaee6-endorsed/webservices-api-osgi.jar" />
     <property name="libs.javaee-api-6.0.src" value="" />
     <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
@@ -395,7 +395,7 @@
     <property name="libs.restlib.maven-pom" value="" />
     <property name="libs.DataBindingME.javadoc" value="/usr/local/netbeans-7.0.1/mobility/modules/docs/netbeans_databindingme-api.zip" />
     <property name="apple.laf.useScreenMenuBar" value="true" />
-    <property name="java.class.path" value="/home/muffa/NetBeansProjects/OhHa/build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-3.8.2.jar:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar:/home/muffa/NetBeansProjects/OhHa/build/test/classes:/usr/local/netbeans-7.0.1/java/ant/lib/ant-launcher.jar:/usr/local/netbeans-7.0.1/java/ant/lib/ant.jar:/usr/local/netbeans-7.0.1/java/ant/lib/ant-junit.jar:/usr/local/netbeans-7.0.1/java/ant/lib/ant-junit4.jar" />
+    <property name="java.class.path" value="/home/muffa/NetBeansProjects/OhHa/build/classes:/home/muffa/.netbeans/7.0/modules/ext/junit-4.8.2.jar:/home/muffa/NetBeansProjects/OhHa/build/test/classes:/usr/local/netbeans-7.0.1/java/ant/lib/ant-launcher.jar:/usr/local/netbeans-7.0.1/java/ant/lib/ant.jar:/usr/local/netbeans-7.0.1/java/ant/lib/ant-junit.jar:/usr/local/netbeans-7.0.1/java/ant/lib/ant-junit4.jar" />
     <property name="do.mkdist" value="true" />
     <property name="libs.absolutelayout.src" value="" />
     <property name="libs.cdc-pp-awt-layout.maven-pom" value="" />
@@ -436,50 +436,9 @@
     <property name="javadoc.nonavbar" value="false" />
     <property name="platform.active" value="default_platform" />
   </properties>
-  <testcase classname="gol.GridTest" name="testAsdf" time="18.623" />
-  <system-out><![CDATA[
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <testcase classname="gol.GridTest" name="testAsdf" time="14.678" />
+  <system-out><![CDATA[While begins:
+While ends.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -48,14 +48,17 @@ public class GridTest {
         assertTrue(grid.giveCell(5,5).isInNbh(grid.giveCell(4, 4)));
         assertFalse(grid.giveCell(5, 5).isInNbh(grid.giveCell(3, 4)));
         int i;
-        for (i=1;i<10;i++) {
+        //for (i=1;i<5;i++) {
             grid = new Grid(1024,1024);
+            grid.iterate();
             assertFalse(grid.checkForCycles());
-            while(grid.iterate());
+            System.out.println("While begins:");
+            while(!grid.iterate());
+            System.out.println("While ends.");
             assertTrue(grid.checkForCycles());
             grid = grid.reset();
             assertFalse(grid.checkForCycles());
-        }
+        //}
         
         
 

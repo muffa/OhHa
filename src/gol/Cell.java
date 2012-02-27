@@ -29,7 +29,9 @@ public interface Cell {
      * @return True if the cell will be alive after the next step, false if not
      */
     public boolean getDestiny();
-    
+    /**
+     * Calculates whether the cell will be alive or dead after the next step.
+     */
     
     public void setDestiny();
     

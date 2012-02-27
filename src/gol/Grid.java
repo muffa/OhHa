@@ -114,7 +114,7 @@ public class Grid {
      * Creates a copy of a given grid.
      * @return Pointer to the copy.
      */
-    public Grid copy() {
+    private Grid copy() {
         Grid copy = new Grid(w,h);
         for(i=0;i<w;i++) for(j=0;j<h;j++) copy.giveCell(i, j).setStatus(this.giveCell(i, j).getStatus());
         copy.prev = this.prev;
